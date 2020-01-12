@@ -12,3 +12,4 @@ curl -s https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/.mus
 source ~/.musa11971-helpers.sh
 
 echo "✅ Installed musa11971 helpers"
+echo "You may need to restart your current terminal."
