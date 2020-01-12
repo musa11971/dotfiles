@@ -5,6 +5,9 @@ function sublime() {
   open $1 -a "Sublime Text"
 }
 
+# Alias to update these helpers
+alias update-musa11971-helpers='sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"'
+
 # PHPUnit alias
 alias pu='phpunit --testdox'
 
