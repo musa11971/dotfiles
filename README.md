@@ -12,7 +12,7 @@ Feel free to use anything you find in this repo.
 You can choose to only install the helpers.  
 - If you already have the helpers installed:
   ```
-  update-musa11971-helpers
+  musa update
   ```
 - First time installing:  
   ```
