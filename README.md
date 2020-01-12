@@ -2,8 +2,15 @@
 📄 My personal dotfiles.
 
 ## Installing just the helpers
-You can also only install the helpers using curl.  
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"`
+You can choose to only install the helpers.  
+- If you already have the helpers installed:
+  ```
+  update-musa11971-helpers
+  ```
+- First time installing:  
+  ```
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"
+  ```
 
 ## Setting up new mac
 Follow these install instructions to setup a new Mac.
