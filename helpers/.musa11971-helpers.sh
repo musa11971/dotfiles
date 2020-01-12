@@ -12,4 +12,4 @@ alias update-musa11971-helpers='sh -c "$(curl -fsSL https://raw.githubuserconten
 alias pu='phpunit --testdox'
 
 # Laravel migrate:fresh --seed alias
-alis mfs='php artisan migrate:fresh --seed'
+alias mfs='php artisan migrate:fresh --seed'
