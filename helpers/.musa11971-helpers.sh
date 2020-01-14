@@ -39,4 +39,4 @@ alias mfs='php artisan migrate:fresh --seed'
 alias finder='open .'
 
 # Deletes dead branches that have been removed from the git remote
-alias clean-branches='git fetch -p && for branch in `git branch -vv | grep \': gone]\' | awk \'{print $1}\'`; do git branch -D $branch; done'
+alias clean-branches="git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
