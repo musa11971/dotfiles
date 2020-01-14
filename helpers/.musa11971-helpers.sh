@@ -29,6 +29,11 @@ function sublime() {
   open $1 -a "Sublime Text"
 }
 
+# Deletes dead branches that have been removed from the git remote
+function clean-branches() {
+  git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+}
+
 # PHPUnit alias
 alias pu='clear;phpunit --testdox'
 
@@ -37,6 +42,3 @@ alias mfs='php artisan migrate:fresh --seed'
 
 # Opens the current folder in Finder
 alias finder='open .'
-
-# Deletes dead branches that have been removed from the git remote
-alias clean-branches="git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
