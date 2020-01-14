@@ -30,7 +30,7 @@ function sublime() {
 }
 
 # PHPUnit alias
-alias pu='phpunit --testdox'
+alias pu='clear;phpunit --testdox'
 
 # Laravel migrate:fresh --seed alias
 alias mfs='php artisan migrate:fresh --seed'
