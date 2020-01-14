@@ -16,6 +16,7 @@ function musa {
 		echo -e "  \e[32mpu\e[0m\t\tRuns PHPUnit tests in the current context"
 		echo -e "  \e[32mmfs\e[0m\t\tRuns php artisan migrate:fresh --seed"
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder"
+		echo -e "  \e[32mrepo\e[0m\t\tOpens the current git repository in the browser"
 	elif [ $1 = 'update' ]; then
 		# Update command
 		sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"
@@ -37,3 +38,6 @@ alias mfs='php artisan migrate:fresh --seed'
 
 # Opens the current folder in Finder
 alias finder='open .'
+
+# Opens the current git repo URL
+alias repo='open "$(git config --get remote.origin.url)"'
