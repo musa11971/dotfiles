@@ -6,7 +6,7 @@ echo "Setting up your Mac..."
 sh helpers/install-helpers.sh
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if test ! "$(which brew)"; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
@@ -24,11 +24,11 @@ pecl install memcached imagick
 /usr/local/bin/composer global require laravel/installer laravel/valet
 
 # Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+"$HOME/.composer/vendor/bin/valet" install
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s "$HOME/.dotfiles/.mackup.cfg" "$HOME/.mackup.cfg"
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+mkdir "$HOME/Sites"
