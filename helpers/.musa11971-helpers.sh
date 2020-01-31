@@ -14,6 +14,7 @@ musa() {
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
 		echo -e "  \e[32msublime\e[0m\tOpens a file or folder in Sublime Text"
 		echo -e "  \e[32mpu\e[0m\t\tRuns PHPUnit tests in the current context"
+		echo -e "  \e[32mpuf\e[0m\t\tRuns PHPUnit tests in the current context, with a filter"
 		echo -e "  \e[32mmfs\e[0m\t\tRuns php artisan migrate:fresh --seed"
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder"
 		echo -e "  \e[32mrepo\e[0m\t\tOpens the current git repository in the browser"
@@ -30,8 +31,9 @@ sublime() {
 	open "$1" -a "Sublime Text"
 }
 
-# PHPUnit alias
+# PHPUnit aliases
 alias pu='clear;phpunit --testdox'
+alias puf='clear;phpunit --testdox --filter='
 
 # Laravel migrate:fresh --seed alias
 alias mfs='php artisan migrate:fresh --seed'
