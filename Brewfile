@@ -7,25 +7,18 @@ brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'httpie'
-brew 'mackup'
-brew 'mas' # Mac App Store manager
 brew 'pkg-config'
-brew 'trash' # Manage the Trash bin
-brew 'tree' # List directories in a tree structure
-brew 'zlib' # Needed for Memcached
 
 # Development
 brew 'php'
-brew 'php@7.2'
+brew 'php@8.1'
 brew 'composer'
-brew 'imagemagick'
 brew 'mysql'
 brew 'nginx'
 brew 'node'
 brew 'yarn'
 
 # Apps
-cask 'discord'
 cask 'sublime-text'
 
 # Mac App Store
