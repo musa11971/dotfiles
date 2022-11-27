@@ -28,8 +28,7 @@ Follow these install instructions to setup a new Mac.
 4. Clone this repo to `~/.dotfiles`.
 5. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
 6. Run `install.sh` to start the installation
-7. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
-8. Restart your computer to finalize the process
+9. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
