@@ -12,7 +12,7 @@ musa() {
 		echo -e "  \e[32mhelp\e[0m\t\tShows this help screen"
 		echo -e "  \e[32mupdate\e[0m\tUpdates these helpers with the most recent version"
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
-		echo -e "  \e[32mcat\e[0m\tCat command that uses the 'bat' formatter."
+		echo -e "  \e[32mcat\e[0m\t\tCat command that uses the 'bat' formatter."
 		echo -e "  \e[32msublime\e[0m\tOpens a file or folder in Sublime Text"
 		echo -e "  \e[32mpu\e[0m\t\tRuns PHPUnit tests in the current context"
 		echo -e "  \e[32mpuf\e[0m\t\tRuns PHPUnit tests in the current context, with a filter"
