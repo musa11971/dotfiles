@@ -27,7 +27,7 @@ Follow these install instructions to setup a new Mac.
 3. Install macOS Command Line Tools by running `xcode-select --install`
 4. Clone this repo to `~/.dotfiles`.
 5. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
-6. Run the install script to start the installation: `chmod +x install.sh && ./install.sh`
+6. Run the install script to start the installation: `./install.sh`
 9. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
