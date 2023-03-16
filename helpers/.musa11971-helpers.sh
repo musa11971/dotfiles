@@ -35,7 +35,7 @@ sublime() {
 }
 
 # Duster aliases
-alias pint='./vendor/bin/duster'
+alias duster='./vendor/bin/duster'
 
 # Pint aliases
 alias pint='./vendor/bin/pint'
