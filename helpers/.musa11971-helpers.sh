@@ -14,7 +14,7 @@ musa() {
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
 		echo -e "  \e[32mcat\e[0m\t\tCat command that uses the 'bat' formatter."
 		echo -e "  \e[32msublime\e[0m\tOpens a file or folder in Sublime Text"
-		echo -e "  \e[32mduster\e[0m\t\tRuns Tighten Duster current context"
+		echo -e "  \e[32mduster\e[0m\tRuns Tighten Duster current context"
 		echo -e "  \e[32mpint\e[0m\t\tRuns Pint in the current context"
 		echo -e "  \e[32mpest\e[0m\t\tRuns Pest tests in the current context"
 		echo -e "  \e[32mpestf\e[0m\t\tRuns Pest tests in the current context, with a filter"
