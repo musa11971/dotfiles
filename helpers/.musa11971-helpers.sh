@@ -13,6 +13,7 @@ musa() {
 		echo -e "  \e[32mupdate\e[0m\tUpdates these helpers with the most recent version"
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
 		echo -e "  \e[32mcat\e[0m\t\tCat command that uses the 'bat' formatter."
+		echo -e "  \e[32mwip\e[0m\t\tPushes 'wip' commit to current git repo."
 		echo -e "  \e[32msublime\e[0m\tOpens a file or folder in Sublime Text"
 		echo -e "  \e[32mduster\e[0m\tRuns Tighten Duster current context"
 		echo -e "  \e[32mpint\e[0m\t\tRuns Pint in the current context"
@@ -55,3 +56,6 @@ alias repo='open "$(git config --get remote.origin.url)"'
 
 # Replaces cat with bat
 alias cat='bat'
+
+# Git wip push
+alias wip='git add .;git commit -m "wip"; git push'
