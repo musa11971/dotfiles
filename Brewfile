@@ -16,8 +16,8 @@ brew 'php@8.1'
 brew 'composer'
 brew 'mariadb'
 brew 'nginx'
-brew 'node'
 brew 'yarn'
+brew 'nvm'
 
 # Apps
 cask 'sublime-text'

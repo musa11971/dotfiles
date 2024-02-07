@@ -1,6 +1,22 @@
 #!/bin/sh
 
+DOTFILES_DIR="$HOME/dotfiles"
+
+if [[ "$(pwd)" != $DOTFILES_DIR ]]; then
+  echo "\nCannot proceed with installation, pwd invalid."
+  echo "Please run this install script inside the following directory:"
+  echo "\t$DOTFILES_DIR\n"
+  exit 0
+fi
+
 echo "Setting up your Mac..."
+
+# Remove macOS motd
+touch $HOME/.hushlogin
+
+# Basic filesystem setup
+mkdir -p $HOME/Development
+mkdir -p $HOME/.nvm
 
 # Check for Homebrew and install if we don't have it
 if test ! "$(which brew)"; then
@@ -24,3 +40,9 @@ if test ! "$(which valet)"; then
   composer global require laravel/valet
   "$HOME/.composer/vendor/bin/valet" install
 fi
+
+# Stow all directories to the home
+stow helpers -t $HOME
+
+rm -f $HOME/.zshrc
+stow zsh -t $HOME

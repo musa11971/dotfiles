@@ -5,30 +5,18 @@
 </p>
 
 ## About
-These are my personal [dotfiles](https://www.freecodecamp.org/news/dive-into-dotfiles-part-1-e4eb1003cff6/). I use them to backup, restore, and sync prefs and settings on my MacBook.  
-Feel free to use anything you find in this repo. 
+These are my personal [dotfiles](https://www.freecodecamp.org/news/dive-into-dotfiles-part-1-e4eb1003cff6/). I use them to backup and restore preferences and settings on my MacBook.  
+Feel free to use anything you find in this repo.
 
-## Installing just the helpers
-You can choose to only install the helpers.  
-- If you already have the helpers installed:
-  ```
-  musa update
-  ```
-- First time installing:  
-  ```
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"
-  ```
-
-## Setting up new mac
-Follow these install instructions to setup a new Mac.
+## Installation
+Follow these install instructions to set up on a Mac.
 
 1. Update macOS to the latest version with the App Store
 2. Install Xcode from the App Store, open it and accept the license agreement
 3. Install macOS Command Line Tools by running `xcode-select --install`
 4. Clone this repo to `~/.dotfiles`.
 5. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
-6. Run the install script to start the installation: `./install.sh`
-9. Restart your computer to finalize the process
+6. Run the installation script to start the installation: `./install.sh`
 
 Your Mac is now ready to use!
 
@@ -40,3 +28,4 @@ Pull requests that fix bugs/typos, clean up stuff or improve efficiency/maintain
 - https://dotfiles.github.io/
 - https://driesvints.com/blog/getting-started-with-dotfiles/
 - https://github.com/driesvints/dotfiles
+- https://github.com/shakeelmohamed/stow-dotfiles

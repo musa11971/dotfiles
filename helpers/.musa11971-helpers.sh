@@ -10,7 +10,6 @@ musa() {
 		echo -e "  'musa [command]'\n"
 		echo -e "\e[33mAvailable commands:\e[0m"
 		echo -e "  \e[32mhelp\e[0m\t\tShows this help screen"
-		echo -e "  \e[32mupdate\e[0m\tUpdates these helpers with the most recent version"
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
 		echo -e "  \e[32mcat\e[0m\t\tCat command that uses the 'bat' formatter."
 		echo -e "  \e[32mwip\e[0m\t\tPushes 'wip' commit to current git repo."
@@ -22,9 +21,6 @@ musa() {
 		echo -e "  \e[32mmfs\e[0m\t\tRuns php artisan migrate:fresh --seed"
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder"
 		echo -e "  \e[32mrepo\e[0m\t\tOpens the current git repository in the browser"
-	elif [ "$1" = 'update' ]; then
-		# Update command
-		sh -c "$(curl -fsSL https://raw.githubusercontent.com/musa11971/dotfiles/master/helpers/install-helpers.sh)"
 	else
 		echo -e "\e[91mUnknown command, use 'musa help' to list all available commands."
 	fi
