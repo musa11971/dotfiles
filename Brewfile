@@ -8,6 +8,7 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'httpie'
 brew 'pkg-config'
+brew 'stow'
 
 # Development
 brew 'php'

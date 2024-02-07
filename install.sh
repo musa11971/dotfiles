@@ -2,9 +2,6 @@
 
 echo "Setting up your Mac..."
 
-# Install helpers
-sh helpers/install-helpers.sh
-
 # Check for Homebrew and install if we don't have it
 if test ! "$(which brew)"; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -17,8 +14,13 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-# Install global Composer packages
-composer global require laravel/installer laravel/valet
+# Check for Laravel installer and install if we don't have it
+if test ! "$(which laravel)"; then
+  composer global require laravel/installer
+fi
 
-# Install Laravel Valet
-"$HOME/.composer/vendor/bin/valet" install
+# Check for Valet and install if we don't have it
+if test ! "$(which valet)"; then
+  composer global require laravel/valet
+  "$HOME/.composer/vendor/bin/valet" install
+fi
