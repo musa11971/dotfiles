@@ -1,6 +1,3 @@
-# Taps
-tap 'homebrew/cask'
-
 # Binaries
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
@@ -9,6 +6,7 @@ brew 'git'
 brew 'httpie'
 brew 'pkg-config'
 brew 'stow'
+brew 'bitwarden-cli'
 
 # Development
 brew 'php'
@@ -21,6 +19,7 @@ brew 'nvm'
 
 # Apps
 cask 'sublime-text'
+cask 'raycast'
 
 # Mac App Store
 mas 'The Unarchiver', id: 425424353
