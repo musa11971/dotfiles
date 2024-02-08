@@ -21,15 +21,13 @@ musa() {
 		echo -e "  \e[32mmfs\e[0m\t\tRuns php artisan migrate:fresh --seed"
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder"
 		echo -e "  \e[32mrepo\e[0m\t\tOpens the current git repository in the browser"
+		echo -e "  \e[32msite\e[0m\t\tOpens the current directory in the browser (http://{dir}.test/)"
 	else
 		echo -e "\e[91mUnknown command, use 'musa help' to list all available commands."
 	fi
 }
 
-# Open file or folder in Sublime Text
-sublime() {
-	open "$1" -a "Sublime Text"
-}
+alias reload='. ${HOME}/.zshrc'
 
 # Duster aliases
 alias duster='./vendor/bin/duster'
@@ -47,11 +45,15 @@ alias mfs='php artisan migrate:fresh --seed'
 # Opens the current folder in Finder
 alias finder='open .'
 
-# Opens the current git repo URL
+# Open in different program
 alias repo='open "$(git config --get remote.origin.url)"'
+alias site='open "http://$(basename $PWD).test/"'
+sublime() {
+	open "$1" -a "Sublime Text"
+}
 
 # Replaces cat with bat
 alias cat='bat'
 
-# Git wip push
+# Git aliases
 alias wip='git add .;git commit -m "wip"; git push'
