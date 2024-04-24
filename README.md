@@ -2,12 +2,12 @@
 
 <p align="center">
   <sup><em>really bad, don't use</em></sup>
-  <sup><em>Powered by [Musa11971's helpers](https://github.com/musa11971/dotfiles)</em></sup>
 </p>
 
 ## About
 These are my personal [dotfiles](https://www.freecodecamp.org/news/dive-into-dotfiles-part-1-e4eb1003cff6/). I use them to backup and restore preferences and settings on my MacBook.  
 Feel free to use anything you find in this repo.
+Powered by [musa11971's dotfiles](https://github.com/musa11971/dotfiles).
 
 ## Installation
 Follow these install instructions to set up on a Mac.
