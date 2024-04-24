@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# musa11971-helpers command
-musa() {
+# frrrht-helpers command
+frrrht() {
 	if [ -z "$1" ] || [ "$1" = 'help' ] || [ "$1" = '' ]; then
 		# Help command
 		echo -e "       📄 \e[1mmusa11971-helpers"
-		echo -e "  \e[1mhttps://github.com/musa11971/dotfiles\e[0m\n"
+		echo -e "  \e[1mhttps://github.com/frrrht/dotfiles\e[0m\n"
 		echo -e "\e[33mUsage:\e[0m"
-		echo -e "  'musa [command]'\n"
+		echo -e "  'frrrht [command]'\n"
 		echo -e "\e[33mAvailable commands:\e[0m"
 		echo -e "  \e[32mhelp\e[0m\t\tShows this help screen"
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
@@ -27,7 +27,12 @@ musa() {
 	fi
 }
 
-alias reload='. ${HOME}/.zshrc'
+# Global shell helpers
+alias reloadshell="source $HOME/.zshrc"
+alias editshell="vim $HOME/.zshrc && reloadshell"
+
+# MacOS helpers
+
 
 # Duster aliases
 alias duster='./vendor/bin/duster'

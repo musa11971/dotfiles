@@ -2,6 +2,7 @@
 
 <p align="center">
   <sup><em>really bad, don't use</em></sup>
+  <sup><em>Powered by [Musa11971's helpers](https://github.com/musa11971/dotfiles)</em></sup>
 </p>
 
 ## About

@@ -11,6 +11,9 @@ fi
 
 echo "Setting up your Mac..."
 
+# Install XCode
+xcode-select --install
+
 # Remove macOS motd
 touch $HOME/.hushlogin
 
@@ -39,6 +42,7 @@ fi
 if test ! "$(which valet)"; then
   composer global require laravel/valet
   "$HOME/.composer/vendor/bin/valet" install
+  "$HOME/.composer/vendor/bin/valet" trust
 fi
 
 # Stow all directories to the home
