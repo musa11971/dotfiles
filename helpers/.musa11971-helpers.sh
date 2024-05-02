@@ -22,6 +22,7 @@ musa() {
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder"
 		echo -e "  \e[32mrepo\e[0m\t\tOpens the current git repository in the browser"
 		echo -e "  \e[32msite\e[0m\t\tOpens the current directory in the browser (http://{dir}.test/)"
+		echo -e "  \e[32mclean\e[0m\t\tCleans stale git branches & removes useless files"
 	else
 		echo -e "\e[91mUnknown command, use 'musa help' to list all available commands."
 	fi
@@ -57,3 +58,14 @@ alias cat='bat'
 
 # Git aliases
 alias wip='git add .;git commit -m "wip"; git push'
+
+# Clean command
+clean() {
+	if [ -d .git ]; then
+		echo -e "\e[32mCleaning stale git branches..."
+		git branch --merged | grep -v "\* \| main\|master\|develop" | xargs -n 1 git branch -d
+	fi
+
+	echo -e "\e[32mCleaning .DS_Store files..."
+	find . -type f -name '.DS_Store' -delete
+}
