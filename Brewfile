@@ -3,6 +3,9 @@ tap 'nicoverbruggen/homebrew-cask' # PHPMon
 tap 'shivammathur/php'
 tap 'shivammathur/extensions'
 
+# Configuration
+cask_args appdir: "~/Applications", require_sha: true
+
 # Binaries
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
@@ -13,7 +16,7 @@ brew 'pkg-config'
 brew 'stow'
 brew 'neofetch'
 brew 'neovim'
-brew 'zioxide'
+brew 'zoxide'
 
 # Development
 brew 'shivammathur/php/php@8.1'
@@ -32,6 +35,7 @@ brew 'tmux'
 brew 'redis'
 
 # Apps
+cask 'obsidian'
 cask 'sublime-text'
 cask 'raycast'
 cask 'docker'
@@ -40,8 +44,6 @@ cask 'rectangle'
 cask 'tableplus'
 cask 'termius'
 cask 'bartender'
+cask 'ticktick'
+cask 'the-unarchiver'
 cask 'nicoverbruggen/homebrew-cask/phpmon'
-
-# Mac App Store
-mas 'The Unarchiver', id: 425424353
-mas 'TickTick:To-Do List, Calendar', id: 966085870
