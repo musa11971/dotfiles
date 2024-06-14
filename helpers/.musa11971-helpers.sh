@@ -57,7 +57,16 @@ sublime() {
 alias cat='bat'
 
 # Git aliases
-alias wip='git add .;git commit -m "wip"; git push'
+wip() {
+    if [ $# -eq 0 ]; then
+        git add .
+        git commit -m "wip"
+    else
+        git add .
+        git commit -m "$*"
+    fi
+    git push
+}
 
 # Clean command
 clean() {
