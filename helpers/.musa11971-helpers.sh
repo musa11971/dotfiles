@@ -38,7 +38,11 @@ alias pint='./vendor/bin/pint'
 
 # Pest aliases
 alias pest='clear;./vendor/bin/pest'
-alias pestf='clear;./vendor/bin/pest --filter='
+pestf() {
+  clear
+  echo "  \n\e[33mRunning Pest tests with filter: \e[0m$*\n"
+  vendor/bin/pest --filter="$*"
+}
 
 # Laravel migrate:fresh --seed alias
 alias mfs='php artisan migrate:fresh --seed'
@@ -54,7 +58,7 @@ sublime() {
 }
 
 # Replaces cat with bat
-alias cat='bat'
+alias cat='bat -P -p'
 
 # Git aliases
 wip() {
