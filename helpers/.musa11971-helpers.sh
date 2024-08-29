@@ -86,6 +86,11 @@ clean() {
 
 # db command
 function db {
+	if ! command -v mysql &> /dev/null; then
+        echo -e "\e[31mError:\e[0m The 'db' command can only be used when the MySQL binary is available on your device."
+        return 1
+    fi
+
     if [ "$1" = "refresh" ]; then
         mysql -e "drop database $2; create database $2"
     elif [ "$1" = "create" ]; then
