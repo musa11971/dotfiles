@@ -13,6 +13,7 @@ musa() {
 		echo -e "\n\e[33mGlobal helpers:\e[0m"
 		echo -e "  \e[32mbat\e[0m\t\tCat command that uses the 'bat' formatter."
 		echo -e "  \e[32mclean\e[0m\t\tCleans stale git branches & removes useless files."
+		echo -e "  \e[32mcopy\e[0m\t\tCopy the content of a given file to the clipboard."
 		echo -e "  \e[32mduster\e[0m\tRuns Tighten Duster in the current context."
 		echo -e "  \e[32mdb\e[0m\t\tSmall CLI MySQL DB management tool."
 		echo -e "  \e[32mfinder\e[0m\tOpens the current folder in Finder."
@@ -82,6 +83,16 @@ clean() {
 
 	echo -e "\e[32mCleaning .DS_Store files..."
 	find . -type f -name '.DS_Store' -delete
+}
+
+# copy command
+copy() {
+  if [ -z "$1" ]; then
+    echo "  \n\e[33mUsage: \e[0mcopy [file]\n"
+  else
+    pbcopy < "$1"
+    echo "  \n\e[33mCopied content of \e[0m$1\e[33m to clipboard.\e[0m\n"
+  fi
 }
 
 # db command
