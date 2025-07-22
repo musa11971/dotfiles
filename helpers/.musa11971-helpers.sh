@@ -66,10 +66,10 @@ alias cat='bat -P -p'
 wip() {
     if [ $# -eq 0 ]; then
         git add .
-        git commit -m "wip"
+        git commit --signoff -m "wip"
     else
         git add .
-        git commit -m "$*"
+        git commit --signoff -m "$*"
     fi
     git push
 }
