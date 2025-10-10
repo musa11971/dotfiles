@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$HOME/.dotfiles"
 
 if [[ "$(pwd)" != $DOTFILES_DIR ]]; then
   echo "\nCannot proceed with installation, pwd invalid."
