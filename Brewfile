@@ -20,6 +20,7 @@ brew 'nvm'
 # Apps
 cask 'sublime-text'
 cask 'raycast'
+cask 'monitorcontrol'
 
 # Mac App Store
 mas 'The Unarchiver', id: 425424353
