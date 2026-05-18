@@ -73,6 +73,7 @@ wip() {
     fi
     git push
 }
+alias nah='git reset --hard;git clean -df'
 
 # Clean command
 clean() {
