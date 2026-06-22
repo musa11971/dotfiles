@@ -53,7 +53,7 @@ alias mfs='php artisan migrate:fresh --seed'
 alias finder='open .'
 
 # Open in different program
-alias repo='open "$(git config --get remote.origin.url)"'
+alias repo='open "$(git config --get remote.origin.url | sed -E '\''s#git@([^:]+):(.+)\.git#https://\1/\2#; s#\.git$##'\'')"'
 alias site='open "http://$(basename $PWD).test/"'
 sublime() {
 	open "$1" -a "Sublime Text"
